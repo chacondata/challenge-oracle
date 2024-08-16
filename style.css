@@ -293,8 +293,12 @@ footer {
         font-size: 0.75%;
 
     }
+    .elRecuadro {
+        height: 33%;
+        top: 60%;
+    }
 }
-
+    
     
 
 
