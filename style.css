@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+* { margin: 0;
+    padding: 0;    
+    font-family: Inter;
+    font-style: normal;
+    background:#F3F5FC;   
+    }
+
+.logo {width: 6%;
+    padding-top: 1%;    
+    }
+    
+.titulo { color: #0a3871;
+        text-align: center;
+        font-size: 2em;
+        font-weight: 700;
+        width: 100%;       
+    }
+
+main {
+    position: absolute;
+    width: 100%;
+    height:90%;
+     }
+
+.izquierda {
+    width: 50%;
+    height: 80%;   
+}
+
+.textoaEncriptar {
+    position: absolute;
+    background-color: white;
+    color: #0a3871;
+    width:40%;
+    height: 55%;
+    left: 5%;
+    top: 3%;
+    border: 3px solid;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 150%;
+    resize: none;
+    }
+
+::placeholder {
+    color: #0a3871;
+        }
+
+.instrucciones {
+    position: absolute;
+    font-weight: 400;
+    font-size: 0.75em;
+    color: #495057;
+    opacity: 80%;
+    background-color:transparent; 
+    line-height: 150%;   
+    left: 5%;
+    top: 63%;
+    }
+
+.losBotones {
+    display: flex;
+    gap: 40px;
+    position: absolute;
+    width: 70%;
+    top: 70%;
+    left: 5%;
+    font-size: 1em;
+    }
+
+.botonEncriptar {
+    background-color: #0a3071;
+    color: white;
+    padding: 1%;
+    border-radius: 24px;
+    width: 20%;
+    height: 2%;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+     }
+
+.botonDesencriptar {
+    background-color: #d8dfe8;
+    color:#0a3871;
+    padding: 1%;
+    border-radius: 24px;
+    width: 20%;
+    height: 2%;
+    font-weight: 400;
+    line-height: 19px;
+    }
+
+.botonEncriptar:hover,
+.botonDesencriptar:hover {
+    margin: 0.2%;
+    padding: 1.5%;
+    }
+
+.derecha { 
+    width: 50%;
+    height: 80%;             
+}
+
+.elRecuadro {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 40%;
+    height: 75%;
+    left: 55%;
+    top: 3%;
+    background: white;
+    border: 3px solid;
+    border-radius: 8px;
+    justify-content: center;
+    gap: 10px;    
+}
+
+
+.advertencia {    
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 120%;
+    color:#343a40 ;
+    background: white;
+    text-align: center;
+    border: none;
+    resize: none; 
+            }
+    
+.advertencia.ajustar {
+   text-align: left;
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: 0;
+    font-size: 1em;
+    font-weight: 400;
+    color: #0a3871;
+    line-height: 150%;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.infoDerecha {
+    position: relative;
+    line-height: 120%;
+    font-size: 1em;
+    font-weight: 400;
+    color: #495057;
+    background: white;
+    text-align: center;
+    top: 25%;
+    }
+
+.muñeco {position: relative;
+    left: 23%;
+    width: 50%;
+    top: 5%;
+    background: white;
+     }
+
+.ocultar {
+    display: none;
+}
+
+.mostrar {
+    display:block;
+}
+
+.botonDecopiar {
+    position: absolute;
+    background-color: #0a3071;
+    color: white;
+    padding: 1%;
+    border-radius: 24px;
+     font-weight: 400;
+    line-height: 19px;
+    left: 33%;
+    top: 88%;
+    width: 35%;
+    height: 8%;
+    display:none  
+    
+}
+
+.botonDecopiar:hover {
+    margin: 0.3%;
+    padding: 2%;
+    }
+
+footer {
+    position: absolute; 
+    top: 96%;
+    width: 100%;
+    text-align: center;
+    
+    font-weight: 500;
+}
+
+@media  (max-width:768px)   {
+    .main {
+        display: flex;
+        flex-direction: row;
+    }
+    .izquierda {
+        width: 100%;
+    }
+    .textoaEncriptar {
+        width: 80%;
+       height: 40%;
+       left: 10%;
+       top: 5%;
+       }
+
+    .instrucciones {
+        width: 80%;
+         left: 10%;
+       top: 47%;
+    }
+
+    .losBotones {
+        width: 80%;
+        left: 10%;
+        top: 50%;
+
+    }
+
+    .elRecuadro{
+        width: 80%;
+        height: 35%;
+        left: 10%;
+        top: 58%;
+        gap: 10px;
+    }
+
+    .muñeco
+    {
+        display: none;
+    }
+    .infoDerecha
+    {
+        top: 50%;
+    }
+
+    .botonDecopiar {
+        top: 83%;
+        width: 30%;
+        height: 14%;
+    }
+}
+
+@media (max-width:431px) {
+    .losBotones {
+        display: flex;
+        flex-direction: column;
+        top: 46%;
+        gap: 10px;
+        left: 20%;
+        }
+
+    .botonEncriptar {
+        width: 70%;
+        
+    }
+
+    .botonDesencriptar {
+        width: 70%;
+    }
+
+    .instrucciones {
+        top:42%
+    }
+
+    .textoaEncriptar {
+        height: 35%;
+    }
+}
+
+    
+
+
+
+
+
