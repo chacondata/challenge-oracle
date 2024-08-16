@@ -281,6 +281,18 @@ footer {
     .textoaEncriptar {
         height: 35%;
     }
+
+    .titulo {
+        font-size: 1em;
+    }
+    .advertencia {
+        font-size: 0.75em;
+    }
+
+    .infoDerecha {
+        font-size: 0.75%;
+
+    }
 }
 
     
