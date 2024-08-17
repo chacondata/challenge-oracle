@@ -256,7 +256,7 @@ footer {
     }
 }
 
-@media only screen and (max-width:431px) and (orientation : portrait ) {
+@media (max-width:431px) and (orientation : portrait ) {
     .losBotones {
         display: flex;
         flex-direction: column;
